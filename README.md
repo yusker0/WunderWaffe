@@ -17,7 +17,26 @@ These are the fields you need to fill:
 - reply_text (What you will write in the comments)
 - delay (Delay between the post and your comment. Measured in seconds, minimum 2.6)
 
+Your config.ini should look like this:
+
+```
+[Telegram]
+api_id = 1234567
+api_hash = 1234567890abcdefghijklmnopqrstuvw
+
+[Target]
+channel_name = Du Rove's Channel
+channel_id = 1234567890
+discussion_id = 1234567891
+
+[WunderWaffe]
+reply_text = Hi
+delay = 4
+```
+
 After you've filled out the config, you need to run [main.py](main.py) and follow the instructions on the screen.
 ## License
 
 [WTFPL](http://www.wtfpl.net)
+
+
