@@ -12,8 +12,8 @@ username = config['Telegram']['username']
 reply_text = config['WunderWaffe']['reply_text']
 delay = config['WunderWaffe']['delay']
 
-channel_id = 1988659280
-discussion_id = 1969573951
+channel_id = config['WunderWaffe']['channel_id']
+discussion_id = config['WunderWaffe']['discussion_id']
 
 with (TelegramClient('WunderWaffe', api_id, api_hash) as client):
    @client.on(events.NewMessage(chats=[channel_id,]))
